@@ -23,8 +23,8 @@ const MegaMenu = () => {
           <MegaManuTabs handleTabClick={handleTabClick} activeMegaManu={activeMegaManu} />
 
           <div className="tab-content nxl-mega-menu-tabs-content">
-            <MegaMenuGeneralTab />
-            <MegaMenuApplicationsTab />
+            {/* <MegaMenuGeneralTab />
+            <MegaMenuApplicationsTab /> */}
             <MegaMenuIntegrationsTab />
             <MegaMenuComponentsTab />
             <MegaMenuAuthenticationTab />

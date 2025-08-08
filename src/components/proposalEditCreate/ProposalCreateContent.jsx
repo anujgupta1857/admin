@@ -30,101 +30,33 @@ const ProposalCreateContent = () => {
         <>
             {loading ? <Loading /> : ""}
 
-            <div className="col-xl-6">
+            <div className="col-xl-12">
                 <div className="card stretch stretch-full">
                     <div className="card-body">
+                    <div className="mb-4">
+                            <label className="form-label">Subject <span className="text-danger">*</span></label>
+                            <input type="text" className="form-control" placeholder="Subject" defaultValue="" />
+                        </div>
                         <div className="mb-4">
                             <label className="form-label">Subject <span className="text-danger">*</span></label>
                             <input type="text" className="form-control" placeholder="Subject" defaultValue="" />
                         </div>
                         <div className="mb-4">
-                            <label className="form-label">Related <span className="text-danger">*</span></label>
-                            <SelectDropdown
-                                options={propsalRelatedOptions}
-                                selectedOption={selectedOption}
-                                defaultSelect="lead"
-                                onSelectOption={(option) => setSelectedOption(option)}
-                            />
+                            <label className="form-label">Subject <span className="text-danger">*</span></label>
+                            <input type="text" className="form-control" placeholder="Subject" defaultValue="" />
                         </div>
                         <div className="mb-4">
-                            <label className="form-label">Lead <span className="text-danger">*</span></label>
-                            <SelectDropdown
-                                options={propasalLeadOptions}
-                                selectedOption={selectedOption}
-                                defaultSelect="ui"
-                                onSelectOption={(option) => setSelectedOption(option)}
-                            />
+                            <input type="submit" className="form-control" placeholder="Subject" defaultValue="" />
                         </div>
-                        <div className="mb-4">
-                            <label className="form-label">Discount </label>
-                            <SelectDropdown
-                                options={propsalDiscountOptions}
-                                selectedOption={selectedOption}
-                                defaultSelect="no-discount"
-                                onSelectOption={(option) => setSelectedOption(option)}
-                            />
-                        </div>
-                        <div className="mb-4">
-                            <label className="form-label">Visibility:</label>
-                            <SelectDropdown
-                                options={propsalVisibilityOptions}
-                                selectedOption={selectedOption}
-                                defaultSelect="private"
-                                onSelectOption={(option) => setSelectedOption(option)}
-                            />
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-6 mb-4">
-                                <label className="form-label">Start <span className="text-danger">*</span></label>
-                                <div className='input-group date '>
-                                    <DatePicker
-                                        placeholderText='Pick start date'
-                                        selected={startDate}
-                                        showPopperArrow={false}
-                                        onChange={(date) => setStartDate(date)}
-                                        className='form-control'
-                                        popperPlacement="bottom-start"
-                                        calendarContainer={({ children }) => (
-                                            <div className='bg-white react-datepicker'>
-                                                {children}
-                                                {renderFooter("start")}
-                                            </div>
-                                        )}
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <label className="form-label">Due <span className="text-danger">*</span></label>
-                                <div className='input-group date '>
-                                    <DatePicker
-                                        placeholderText='Pick due date'
-                                        selected={endDate}
-                                        showPopperArrow={false}
-                                        onChange={(date) => setEndDate(date)}
-                                        className='form-control'
-                                        popperPlacement="bottom-start"
-                                        calendarContainer={({ children }) => (
-                                            <div className='bg-white react-datepicker'>
-                                                {children}
-                                                {renderFooter("end")}
-                                            </div>
-                                        )}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mb-4">
-                            <label className="form-label">Tags:</label>
-                            <MultiSelectTags options={taskLabelsOptions} placeholder={""} />
-                        </div>
-                        <div className="mb-0">
-                            <label className="form-label">Assignee:</label>
-                            <MultiSelectImg options={taskAssigneeOptions} placeholder={""} />
-                        </div>
+                       
+                      
+                      
+                        
+                       
                     </div>
                 </div>
             </div>
-            <div className="col-xl-6">
+            {/* <div className="col-xl-6">
                 <div className="card stretch stretch-full">
                     <div className="card-body">
                         <div className="mb-4">
@@ -231,8 +163,8 @@ const ProposalCreateContent = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <AddProposal previtems={previtems} />
+            </div> */}
+            {/* <AddProposal previtems={previtems} /> */}
         </>
     )
 }
