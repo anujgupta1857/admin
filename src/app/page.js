@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import React from 'react'
 import PageHeader from '@/components/shared/pageHeader/PageHeader'
 import PageHeaderDate from '@/components/shared/pageHeader/PageHeaderDate'
@@ -13,12 +13,10 @@ import LatestLeads from '@/components/widgetsTables/LatestLeads'
 import TeamProgress from '@/components/widgetsList/Progress'
 import { projectsDataTwo } from '@/utils/fackData/projectsDataTwo'
 import DuplicateLayout from './duplicateLayout'
-import { redirect } from 'next/dist/server/api-utils'
-import { useRouter } from 'next/navigation'
 
 const Home = () => {
-  const token = sessionStorage.getItem('token')
-  const router = useRouter();
+  // const token = sessionStorage.getItem('token')
+  // const router = useRouter();
 
   // if (!token) {
   //   router.push('/login');
